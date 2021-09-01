@@ -5,6 +5,7 @@ import 'package:widget/AppUiWidget/location.dart';
 import 'package:widget/AppUiWidget/place_info.dart';
 import 'package:widget/AppUiWidget/place_name.dart';
 import 'package:widget/AppUiWidget/scan.dart';
+import 'package:widget/AppUiWidget/service.dart';
 import 'package:widget/day.dart';
 import 'package:widget/detail.dart';
 import 'package:widget/pop.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BackBtn(),
+      home: Service(),
     );
   }
 }

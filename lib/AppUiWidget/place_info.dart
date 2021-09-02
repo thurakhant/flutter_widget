@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class PlaceInfo extends StatelessWidget {
@@ -28,7 +30,7 @@ class PlaceInfo extends StatelessWidget {
                 height: 30,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white.withOpacity(0.7),
+                  color: Colors.white.withOpacity(0.5),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,

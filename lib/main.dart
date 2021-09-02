@@ -7,6 +7,7 @@ import 'package:widget/AppUiWidget/place_info.dart';
 import 'package:widget/AppUiWidget/place_name.dart';
 import 'package:widget/AppUiWidget/profile.dart';
 import 'package:widget/AppUiWidget/scan.dart';
+import 'package:widget/AppUiWidget/search_bar.dart';
 import 'package:widget/AppUiWidget/service.dart';
 import 'package:widget/day.dart';
 import 'package:widget/detail.dart';

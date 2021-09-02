@@ -8,6 +8,7 @@ class SearchBar extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
+          padding: EdgeInsets.all(15),
           width: 327,
           height: 47,
           decoration: BoxDecoration(
@@ -16,9 +17,7 @@ class SearchBar extends StatelessWidget {
           ),
           child: TextField(
             decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
+              border: InputBorder.none,
               suffixIcon: Icon(
                 Icons.search,
                 color: Colors.lightBlue,

@@ -6,6 +6,7 @@ class HotelTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink,
       body: Center(
         child: Container(
           width: 330,

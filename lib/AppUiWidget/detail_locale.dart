@@ -4,14 +4,13 @@ class DetailLocation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink,
       body: Center(
         child: Container(
           padding: EdgeInsets.all(13),
           width: 330,
           height: 405,
           decoration: BoxDecoration(
-            color: Colors.grey,
+            image: DecorationImage(image: AssetImage('images/map.png')),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
@@ -51,7 +50,7 @@ class DetailLocation extends StatelessWidget {
                     height: 75,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Colors.white,
+                      color: Colors.white.withOpacity(0.5),
                     ),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -128,7 +127,7 @@ class DetailLocation extends StatelessWidget {
                     height: 120,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Colors.white,
+                      color: Colors.white.withOpacity(0.5),
                     ),
                     child: Text(
                         'We hold ourselves to uncompromising ethical and legal standards. This extends to our day-to-day business conduct, our employee policies, and our environmental programs rights and social responsibility.'),

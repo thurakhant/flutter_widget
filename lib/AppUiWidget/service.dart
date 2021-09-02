@@ -6,13 +6,14 @@ class Service extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/Background.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
+            // image: DecorationImage(
+            //   image: AssetImage('images/Background.png'),
+            //   fit: BoxFit.cover,
+            // ),
+            ),
         child: Center(
           child: Container(
             padding: EdgeInsets.fromLTRB(11, 13, 10, 13),

@@ -6,7 +6,7 @@ class Placename extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.grey,
       body: Center(
         child: Container(
           padding: EdgeInsets.all(16),
@@ -21,11 +21,11 @@ class Placename extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star),
+                  Icon(Icons.star, color: Colors.lightBlue),
+                  Icon(Icons.star, color: Colors.lightBlue),
+                  Icon(Icons.star, color: Colors.lightBlue),
+                  Icon(Icons.star, color: Colors.lightBlue),
+                  Icon(Icons.star, color: Colors.lightBlue),
                 ],
               ),
               Text(

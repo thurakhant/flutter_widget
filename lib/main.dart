@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:widget/AppUiWidget/detail_locale.dart';
 import 'package:widget/AppUiWidget/hotel.dart';
 import 'package:widget/AppUiWidget/hotel_locate.dart';
 import 'package:widget/AppUiWidget/location.dart';
 import 'package:widget/AppUiWidget/place_info.dart';
 import 'package:widget/AppUiWidget/place_name.dart';
+import 'package:widget/AppUiWidget/profile.dart';
 import 'package:widget/AppUiWidget/scan.dart';
 import 'package:widget/AppUiWidget/service.dart';
 import 'package:widget/day.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Service(),
+      home: PlaceInfo(),
     );
   }
 }

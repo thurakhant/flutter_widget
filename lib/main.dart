@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:widget/Bettor_Widget/button.dart';
+import 'package:widget/Bettor_Widget/datachange.dart';
+import 'package:widget/Bettor_Widget/day.dart';
 import 'package:widget/Bettor_Widget/search.dart';
+import 'package:widget/Bettor_Widget/sign_out.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Button(),
+        child: DataChange(),
       ),
     );
   }
@@ -24,7 +27,7 @@ class MyApp extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-//       body: Column(
+//       body: Colum
 //         children: dummyData.map((e) {
 //           return Container(
 //             margin: EdgeInsets.all(20),

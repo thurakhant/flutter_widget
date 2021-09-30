@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:widget/Bettor_Widget/button.dart';
-import 'package:widget/Bettor_Widget/datachange.dart';
-import 'package:widget/Bettor_Widget/day.dart';
-import 'package:widget/Bettor_Widget/search.dart';
-import 'package:widget/Bettor_Widget/sign_out.dart';
+
+import 'package:widget/WebBettor/pop_profile.dart';
 
 void main() {
   runApp(MaterialApp(home: MyApp()));
@@ -14,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: DataChange(),
+        child: PopProfile(),
       ),
     );
   }

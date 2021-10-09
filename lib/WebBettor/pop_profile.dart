@@ -6,7 +6,7 @@ import 'package:flutter/rendering.dart';
 class PopProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    print(MediaQuery.of(context).size.width);
+    // print(MediaQuery.of(context).size.width);
     return Scaffold(
       body: Center(
         child: ElevatedButton(
@@ -32,7 +32,7 @@ class SimpleDialog extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Container(
+      child: SizedBox(
         width: 700,
         height: 500,
         child: Padding(
@@ -127,20 +127,31 @@ class SimpleDialog extends StatelessWidget {
 }
 
 //fullname
-class NameField extends StatelessWidget {
+class NameField extends StatefulWidget {
   const NameField({
     Key? key,
   }) : super(key: key);
+  @override
+  State<NameField> createState() => _NameFieldState();
+}
+
+class _NameFieldState extends State<NameField> {
+  late TextEditingController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = TextEditingController();
+  }
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: controller,
       decoration: InputDecoration(
-          fillColor: Color.fromRGBO(240, 240, 240, 1),
-          filled: true,
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(14)),
-          label: Text('Fullname'),
-          hintText: "Enter Your Name"),
+        label: Text('Fullname'),
+        hintText: "Enter Your Name",
+      ),
     );
   }
 }
@@ -180,7 +191,9 @@ class ButtonCancel extends StatelessWidget {
             Color.fromRGBO(240, 240, 240, 1),
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pop(context);
+        },
         child: Text(
           'Cancel',
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
